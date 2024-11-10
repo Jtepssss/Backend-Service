@@ -5,7 +5,7 @@ import {
     createEssence,
     updateEssence,
     deleteEssence,
-} from "../controllers/essenceController";
+} from "../controllers/essenceController";;
 
 const essenceRoutes = Router();
 
@@ -37,10 +37,10 @@ essenceRoutes.get("/", getAllEssence);
  *     parameters:
  *      - in: path 
  *        name: CodigoDelProducto
- *        requierd: true
+ *        required: true
  *        schema:
  *          type: integer
- *        description: Codigo del Producto
+ *        description: CodigoDelProducto
  *     responses:
  *       200: 
  *         descriptions: Detalles del producto
@@ -55,7 +55,7 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *   post:
  *     summary: Crear un nuevo producto
  *     tags: [Essence]
- *     requetsBody:
+ *     requestBody:
  *       required: true
  *       content:
  *         application/json:
@@ -133,7 +133,7 @@ essenceRoutes.put("/:CodigoDelProducto", updateEssence);
 
 /**
  * @swagger
- * /api/essence/{CodigoDelProducto}
+ * /api/essence/{CodigoDelProducto}:
  *   delete:
  *     summary: Eliminar un producto
  *     tags: [Essence]
@@ -143,7 +143,7 @@ essenceRoutes.put("/:CodigoDelProducto", updateEssence);
  *         required: true
  *         schema:
  *           type: integer
- *         description: Codigo del producto
+ *         description: CodigoDelProducto
  *     responses:
  *       200:
  *         description: Producto eliminado
@@ -152,6 +152,9 @@ essenceRoutes.put("/:CodigoDelProducto", updateEssence);
  *       500:
  *         description: Error en el servidor
  */
- essenceRoutes.delete("/CodigoDelProducto", deleteEssence);
+essenceRoutes.delete("/:CodigoDelProducto", deleteEssence);
 
  export default essenceRoutes;
+  
+
+ 
