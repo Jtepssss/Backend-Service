@@ -1,10 +1,10 @@
 import { Router } from "express";
 import {
-    getAllEssence,
-    getEssenceById,
-    createEssence,
-    updateEssence,
-    deleteEssence,
+  getAllEssence,
+  getEssenceById,
+  createEssence,
+  updateEssence,
+  deleteEssence,
 } from "../controllers/essenceController";
 
 const essenceRoutes = Router();
@@ -13,7 +13,7 @@ const essenceRoutes = Router();
  * @swagger
  * tags:
  *   name: Essence
- *   description: CRUD relacionado con los producto   
+ *   description: CRUD relacionado con los productos   
  */
 
 /**
@@ -37,7 +37,7 @@ essenceRoutes.get("/", getAllEssence);
  *     parameters:
  *      - in: path 
  *        name: CodigoDelProducto
- *        requierd: true
+ *        required: true
  *        schema:
  *          type: integer
  *        description: Codigo del Producto
@@ -55,32 +55,32 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *   post:
  *     summary: Crear un nuevo producto
  *     tags: [Essence]
- *     requetsBody:
+ *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
  *             type: object       
- *             requierd:
+ *             required:
  *               - CodigoDelProducto
  *               - NombreDelProducto       
  *               - DetallesDelProducto      
  *               - Ingredientes       
  *               - Uso      
  *               - Precio      
- *            properties: 
- *              CodigoDelProducto:
- *                type: number
- *              NombreDelProducto:
- *                type: string
- *              DetallesDelProducto:
- *                type: string
- *              Ingredientes:
- *                type: string
- *              Uso:
- *                type: string
- *              Precio:
- *                type: number
+ *             properties: 
+ *               CodigoDelProducto:
+ *                 type: number
+ *               NombreDelProducto:
+ *                 type: string
+ *               DetallesDelProducto:
+ *                 type: string
+ *               Ingredientes:
+ *                 type: string
+ *               Uso:
+ *                 type: string
+ *               Precio:
+ *                 type: number
  *     responses:
  *       201:
  *         description: Producto Creado
@@ -112,7 +112,7 @@ essenceRoutes.post("/", createEssence);
  *               NombreDelProducto:
  *                 type: string
  *               CodigoDelProducto:
- *                 type: Number
+ *                 type: number
  *               DetallesDelProducto:
  *                 type: string
  *               Ingredientes:
@@ -133,7 +133,7 @@ essenceRoutes.put("/:CodigoDelProducto", updateEssence);
 
 /**
  * @swagger
- * /api/essence/{codigodelproducto}
+ * /api/essence/{codigodelproducto}:  
  *   delete:
  *     summary: Eliminar un producto
  *     tags: [Essence]
