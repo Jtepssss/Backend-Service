@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas 
-app.use("/api/Essence", essenceRoutes);
+app.use("/api/essence", essenceRoutes);
 
 //Documentacion del swagger
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
@@ -26,7 +26,7 @@ AppDataSource.initialize()
         console.log(`Servidor corriendo en http://localhost:${PORT}\n`);
 
         console.log(`Endpoints:`);
-        console.log(`API Essence http://localhost:${PORT}/api/Essence`);
+        console.log(`API Essence http://localhost:${PORT}/api/essence`);
   
         console.log(`Documentación:`);
         console.log(`Swagger en http://localhost:${PORT}/api-docs`);

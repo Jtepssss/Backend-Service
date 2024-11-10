@@ -51,7 +51,7 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
 
 /**
  * @swagger
- * /api/essence:
+ * /api/Essence:
  *   post:
  *     summary: Crear un nuevo producto
  *     tags: [Essence]
@@ -91,7 +91,7 @@ essenceRoutes.post("/", createEssence);
 
 /**
  * @swagger
- * /api/essence/{CodigoDelProducto}:
+ * /api/Essence/{CodigoDelProducto}:
  *   put:
  *     summary: Actualizar un producto existente 
  *     tags: [Essence]
@@ -133,7 +133,7 @@ essenceRoutes.put("/:CodigoDelProducto", updateEssence);
 
 /**
  * @swagger
- * /api/essence/{CodigoDelProducto}:
+ * /api/Essence/{CodigoDelProducto}:
  *   delete:
  *     summary: Eliminar un producto
  *     tags: [Essence]
