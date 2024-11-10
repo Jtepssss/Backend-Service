@@ -18,7 +18,7 @@ const essenceRoutes = Router();
 
 /**
  * @swagger 
- * /api/Essence:
+ * /api/essence:
  *   get:
  *     summary: Obtener todos los productos
  *     tags: [Essence]
@@ -30,7 +30,7 @@ essenceRoutes.get("/", getAllEssence);
 
 /**
  * @swagger
- * /api/Essence/{CodigoDelProducto}:
+ * /api/essence/{codigodelproducto}:
  *   get:
  *     summary: Obtener un producto por Codigo Del Producto
  *     tags: [Essence]
@@ -91,7 +91,7 @@ essenceRoutes.post("/", createEssence);
 
 /**
  * @swagger
- * /api/essence/{CodigoDelProducto}:
+ * /api/essence/{codigodelproducto}:
  *   put:
  *     summary: Actualizar un producto existente 
  *     tags: [Essence]
@@ -133,7 +133,7 @@ essenceRoutes.put("/:CodigoDelProducto", updateEssence);
 
 /**
  * @swagger
- * /api/essence/{CodigoDelProducto}
+ * /api/essence/{codigodelproducto}
  *   delete:
  *     summary: Eliminar un producto
  *     tags: [Essence]
