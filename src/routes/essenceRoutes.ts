@@ -68,19 +68,19 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *               - Ingredientes       
  *               - Uso      
  *               - Precio      
- *            properties: 
- *              CodigoDelProducto:
- *                type: number
- *              NombreDelProducto:
- *                type: string
- *              DetallesDelProducto:
- *                type: string
- *              Ingredientes:
- *                type: string
- *              Uso:
- *                type: string
- *              Precio:
- *                type: number
+ *             properties: 
+ *               CodigoDelProducto:
+ *                 type: number
+ *               NombreDelProducto:
+ *                 type: string
+ *               DetallesDelProducto:
+ *                 type: string
+ *               Ingredientes:
+ *                 type: string
+ *               Uso:
+ *                 type: string
+ *               Precio:
+ *                 type: number
  *     responses:
  *       201:
  *         description: Producto Creado
