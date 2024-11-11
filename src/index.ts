@@ -9,7 +9,7 @@ import swaggerSpec from "./swagger/swagger";
 const app: Application = express();
 const PORT = process.env.PORT ?? 3000;
 
-//Middleware - Guardianes de ruta
+//Middleware
 app.use(cors());
 app.use(express.json());
 

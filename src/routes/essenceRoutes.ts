@@ -5,7 +5,7 @@ import {
     createEssence,
     updateEssence,
     deleteEssence,
-} from "../controllers/essenceController";;
+} from "../controllers/essenceController";
 
 const essenceRoutes = Router();
 
@@ -18,7 +18,7 @@ const essenceRoutes = Router();
 
 /**
  * @swagger 
- * /api/Essence:
+ * /api/essence:
  *   get:
  *     summary: Obtener todos los productos
  *     tags: [Essence]
@@ -30,17 +30,17 @@ essenceRoutes.get("/", getAllEssence);
 
 /**
  * @swagger
- * /api/Essence/{CodigoDelProducto}:
+ * /api/essence/{CodigoDelProducto}:
  *   get:
  *     summary: Obtener un producto por Codigo Del Producto
  *     tags: [Essence]
  *     parameters:
- *      - in: path 
- *        name: CodigoDelProducto
- *        required: true
- *        schema:
- *          type: integer
- *        description: CodigoDelProducto
+ *       - in: path 
+ *         name: CodigoDelProducto
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: CodigoDelProducto
  *     responses:
  *       200: 
  *         descriptions: Detalles del producto
@@ -81,11 +81,11 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *                 type: string
  *               Precio:
  *                 type: number
- *     responses:
- *       201:
- *         description: Producto Creado
- *       500:
- *         description: Error en el servidor
+ *       responses:
+ *        201:
+ *          description: Producto Creado
+ *        500:
+ *          description: Error en el servidor
  */
 essenceRoutes.post("/", createEssence);
 
@@ -122,12 +122,12 @@ essenceRoutes.post("/", createEssence);
  *               Precio:
  *                 type: number
  *     responses:
- *       200:
- *         description: Producto actualizado
- *       404:
- *         description: Producto no encontrado
- *       500:
- *         description: Error en el servidor
+ *        200:
+ *          description: Producto actualizado
+ *        404:
+ *          description: Producto no encontrado
+ *        500:
+ *          description: Error en el servidor
  */         
 essenceRoutes.put("/:CodigoDelProducto", updateEssence);
 

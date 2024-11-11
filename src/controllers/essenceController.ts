@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { AppDataSource } from "../data-source";
-import { Essence } from "../entites/Essence";
+import { Essence } from "../entities/Essence";
 
 const essenceRepository = AppDataSource.getRepository(Essence);
 
@@ -76,9 +76,7 @@ export const updateEssence = async(req: Request, res: Response) => {
 
      } catch(error) {
         res.status(500).json({ mesagge: "Error al actualizar el producto"});
-     }
-
-   
+     } 
 };
 
 

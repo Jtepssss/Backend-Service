@@ -19,6 +19,4 @@ export class Essence {
   
     @Column("decimal")
     Precio!: number;
-    
-
 }
