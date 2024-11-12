@@ -69,8 +69,6 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *               - Uso      
  *               - Precio      
  *             properties: 
- *               CodigoDelProducto:
- *                 type: number
  *               NombreDelProducto:
  *                 type: string
  *               DetallesDelProducto:
@@ -111,8 +109,6 @@ essenceRoutes.post("/", createEssence);
  *             properties:
  *               NombreDelProducto:
  *                 type: string
- *               CodigoDelProducto:
- *                 type: Number
  *               DetallesDelProducto:
  *                 type: string
  *               Ingredientes:
