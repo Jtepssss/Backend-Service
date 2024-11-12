@@ -81,11 +81,11 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *                 type: string
  *               Precio:
  *                 type: number
- *       responses:
- *        201:
- *          description: Producto Creado
- *        500:
- *          description: Error en el servidor
+ *     responses:
+ *       201:
+ *         description: Producto Creado
+ *       500:
+ *         description: Error en el servidor
  */
 essenceRoutes.post("/", createEssence);
 
@@ -122,12 +122,12 @@ essenceRoutes.post("/", createEssence);
  *               Precio:
  *                 type: number
  *     responses:
- *        200:
- *          description: Producto actualizado
- *        404:
- *          description: Producto no encontrado
- *        500:
- *          description: Error en el servidor
+ *       200:
+ *         description: Producto actualizado
+ *       404:
+ *         description: Producto no encontrado
+ *       500:
+ *         description: Error en el servidor
  */         
 essenceRoutes.put("/:CodigoDelProducto", updateEssence);
 
