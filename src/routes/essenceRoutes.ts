@@ -69,8 +69,6 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *               - Uso      
  *               - Precio      
  *             properties: 
- *               CodigoDelProducto:
- *                 type: number
  *               NombreDelProducto:
  *                 type: string
  *               DetallesDelProducto:
@@ -81,11 +79,11 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
  *                 type: string
  *               Precio:
  *                 type: number
- *       responses:
- *        201:
- *          description: Producto Creado
- *        500:
- *          description: Error en el servidor
+ *     responses:
+ *       201:
+ *         description: Producto Creado
+ *       500:
+ *         description: Error en el servidor
  */
 essenceRoutes.post("/", createEssence);
 
