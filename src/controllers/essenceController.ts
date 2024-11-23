@@ -43,7 +43,6 @@ export const createEssence = async(req: Request, res: Response) => {
         essence.Uso =  Uso;
         essence.Precio =  Precio;
 
-
         await essenceRepository.save(essence);
         res.status(201).json(essence);
     }catch(error){
