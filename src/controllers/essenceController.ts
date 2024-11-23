@@ -37,11 +37,11 @@ export const createEssence = async(req: Request, res: Response) => {
         const { CodigoDelProducto, NombreDelProducto, DetallesDelProducto, Ingredientes, Uso, Precio} = req.body;
         const essence = new Essence();
         essence.NombreDelProducto = NombreDelProducto;
-        essence.CodigoDelProducto = new CodigoDelProducto;
-        essence.DetallesDelProducto = new DetallesDelProducto;
-        essence.Ingredientes = new Ingredientes;
-        essence.Uso = new Uso;
-        essence.Precio = new Precio;
+        essence.CodigoDelProducto =  CodigoDelProducto;
+        essence.DetallesDelProducto =  DetallesDelProducto;
+        essence.Ingredientes = Ingredientes;
+        essence.Uso =  Uso;
+        essence.Precio =  Precio;
 
         await essenceRepository.save(essence);
         res.status(201).json(essence);

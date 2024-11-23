@@ -51,7 +51,7 @@ essenceRoutes.get("/:CodigoDelProducto", getEssenceById);
 
 /**
  * @swagger
- * /api/Essence:
+ * /api/essence:
  *   post:
  *     summary: Crear un nuevo producto
  *     tags: [Essence]
@@ -91,7 +91,7 @@ essenceRoutes.post("/", createEssence);
 
 /**
  * @swagger
- * /api/Essence/{CodigoDelProducto}:
+ * /api/essence/{CodigoDelProducto}:
  *   put:
  *     summary: Actualizar un producto existente 
  *     tags: [Essence]
@@ -109,31 +109,29 @@ essenceRoutes.post("/", createEssence);
  *           schema:
  *             type: object
  *             properties:
- *               NombreDelProducto:
+ *               nombreDelProducto:
  *                 type: string
- *               CodigoDelProducto:
- *                 type: Number
- *               DetallesDelProducto:
+ *               detallesDelProducto:
  *                 type: string
- *               Ingredientes:
+ *               ingredientes:
  *                 type: string
- *               Uso:
+ *               uso:
  *                 type: string
- *               Precio:
+ *               precio:
  *                 type: number
  *     responses:
- *        200:
- *          description: Producto actualizado
- *        404:
- *          description: Producto no encontrado
- *        500:
- *          description: Error en el servidor
+ *         200:
+ *           description: Producto actualizado
+ *         404:
+ *           description: Producto no encontrado
+ *         500:
+ *           description: Error en el servidor
  */         
 essenceRoutes.put("/:CodigoDelProducto", updateEssence);
 
 /**
  * @swagger
- * /api/Essence/{CodigoDelProducto}:
+ * /api/essence/{CodigoDelProducto}:
  *   delete:
  *     summary: Eliminar un producto
  *     tags: [Essence]
